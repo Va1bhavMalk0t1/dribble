@@ -1,0 +1,301 @@
+* {
+    margin : 0 ; 
+    padding : 0 ; 
+    box-sizing: border-box;
+}
+
+html , body { 
+    height : 100% ; 
+    width : 100% ; 
+}
+
+body { 
+    background-color: white ;
+}
+
+#nav {
+    height : 10vh ; 
+    width : 100% ; 
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    padding : 0 2vw ; 
+    /* background-color: pink ; */
+}
+
+#nav1 {
+    height : 100% ; 
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    /* background-color: pink ; */
+    gap : 1.5vw ; 
+}
+
+#nav1 img { 
+    height : 80% ; 
+}
+
+#nav h2 {
+    font-size: 1.2vw ;
+}
+
+#nav2 { 
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+    gap : 1.5vw ; 
+    height: 100% ;
+    /* background-color: pink ; */
+}
+
+#nav2 h2:nth-child(2){
+    background-color: black ;
+    color :  white ; 
+    padding : 1vw 1.5vw ; 
+    border-radius: 2vw ;
+}
+
+#first { 
+    height : 55% ; 
+    display: flex ;
+    width : 100% ; 
+}
+
+#first1 {
+    height : 100% ; 
+    width : 50% ; 
+    padding : 2vw 0 2vw 4vw ; 
+}
+
+#first1 h2:nth-child(1) { 
+    font-size: 3.8vw ;
+    font-weight: 510 ;
+    line-height: 3.8vw;
+    margin-bottom : 1.3vw ;  
+}
+
+#first1 h2:nth-child(2) { 
+    font-size: 1.3vw ;
+    font-weight: 510 ;
+}
+
+#opt {
+    width : 60% ; 
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    margin-top : 3vw; 
+}
+
+#opt1 {
+    display: flex ;
+    align-items: center ;
+    background-color: black ;
+    gap : 0.4vw ; 
+    color : white ; 
+    padding : 0.8vw 1.2vw  ; 
+    border-radius: 2vw ;
+}
+
+#opt2 {
+    display: flex ;
+    align-items: center ;
+    gap : 0.4vw ; 
+    padding : 0.8vw 1.2vw  ; 
+    border-radius: 2vw ;
+}
+
+#opt3 {
+    display: flex ;
+    align-items: center ;
+    gap : 0.4vw ; 
+    padding : 0.8vw 1.2vw  ; 
+    border-radius: 2vw ;
+}
+
+#search {  
+    width : 85% ; 
+    /* background-color: pink ; */
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    margin-top: 1vw ;
+    background-color: #F3F3F6 ;
+    border-radius: 2vw ;
+    padding : 0.2vw 1vw ; 
+}
+
+#search h4 { 
+   color: rgb(30, 30, 30);
+}
+
+#search h3 {
+    font-size: 1.6vw ;
+    background-color: rgb(216, 67, 92);
+    color : white ; 
+    border-radius: 50% ;
+    padding : 0.6vw ; 
+}
+
+#tags {
+    height : 5vh ; 
+    width : 80% ; 
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    margin-top : 1.3vw ; 
+}
+
+.tags {
+     border : 1px solid rgb(91, 90, 90) ; 
+     border-radius: 2vw ;
+     padding : 0.5vw 1vw  ; 
+}
+
+#first2 {
+    height : 100% ; 
+    width : 50% ; 
+    padding-left: 4vw ;
+}
+
+#first2 video {
+    height : 100% ;
+    border-radius: 2vw ; 
+}
+
+#choice {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-left : 5vw ; 
+    padding-right : 5vw ; 
+    margin-top : 2vw ; 
+}
+
+#choice h3 {
+    font-size: 1.1vw ;
+}
+
+.btn {
+    display: flex ;
+    align-items: center ; 
+    gap : 0.5vw ;
+    border : 1px solid black ; 
+    border-radius: 2vw  ;
+    padding : 0.3vw 0.5vw  ; 
+    font-size: 0.8vw ;
+}
+
+.row { 
+    display: flex ;
+    align-items: center ;
+    height : 30vh ; 
+    width : 100% ; 
+    padding : 0 4.2vw 0  4.2vw ; 
+    gap : 2vw ; 
+    margin-bottom : 0.5vw ; 
+}
+
+#main {
+   margin-top: 2.5vw ;
+}
+
+.pic {
+    height : 100% ; 
+    width : 25% ; 
+    /* background-color: pink ; */
+}
+
+.pic img { 
+    height : 25vh ; 
+    width : 100% ;
+    border-radius: 1vw ; 
+}
+
+.name {
+    height : 12% ; 
+    display: flex ;
+    align-items: center ;
+    gap : 1vw ; 
+    font-size: 1vw ;
+}
+
+.name img { 
+    height : 2vw  ; 
+    width : 2vw ; 
+}
+
+#marq {
+    display: flex ;
+    gap : 1vw ; 
+    overflow-x: auto ; 
+}
+
+
+#marquee {
+    margin-top : 4vw ;  
+    height : 32vh ; 
+    width : 150% ; 
+    display: flex ;
+    gap : 1vw ; 
+    animation-name : marq ; 
+    animation-duration: 15s ;
+    animation-timing-function: linear ;
+    animation-iteration-count: infinite ;
+}
+
+
+
+#marquee img {
+    height : 28vh  ; 
+    width : 45vw ; 
+}
+
+@keyframes marq {
+    from  {
+        transform : translateX(0) ; 
+    }
+
+    to { 
+        transform : translateX(-100%) ; 
+    }
+
+}
+
+#footer {
+    height : 10vh ; 
+    width : 100% ;
+    margin-top: 3vw ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    padding : 0 4vw ; 
+}
+
+#foot1 {
+    display: flex ;
+    gap : 1vw ; 
+}
+
+#foot1 h3 {
+    font-weight: 200 ;
+}
+
+#foot2 {
+    display: flex ;
+    gap : 1vw ; 
+}
+
+#foot2 h3 {
+    font-weight: 200 ;
+}
+
+
+
+
+
+
+
+
+
